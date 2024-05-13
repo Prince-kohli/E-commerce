@@ -1,32 +1,36 @@
 import React, { useState } from "react";
 import Ratting from "../components/Ratting";
+import imgr01 from "../assets/images/instructor/01.jpg";
+import imgr02 from "../assets/images/instructor/02.jpg";
+import imgr03 from "../assets/images/instructor/03.jpg";
+import imgr04 from "../assets/images/instructor/04.jpg";
+import imgr05 from "../assets/images/shop/01.jpg";
 
 const reviwtitle = "Add a Review";
-
 let ReviewList = [
   {
-    imgUrl: "/src/assets/images/instructor/01.jpg",
+    imgUrl: imgr01,
     imgAlt: "Client thumb",
     name: "Ganelon Boileau",
     date: "Posted on Jun 10, 2022 at 6:57 am",
     desc: "Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.",
   },
   {
-    imgUrl: "/src/assets/images/instructor/02.jpg",
+    imgUrl: imgr02,
     imgAlt: "Client thumb",
     name: "Morgana Cailot",
     date: "Posted on Jun 10, 2022 at 6:57 am",
     desc: "Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.",
   },
   {
-    imgUrl: "/src/assets/images/instructor/03.jpg",
+    imgUrl: imgr03,
     imgAlt: "Client thumb",
     name: "Telford Bois",
     date: "Posted on Jun 10, 2022 at 6:57 am",
     desc: "Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.",
   },
   {
-    imgUrl: "/src/assets/images/instructor/04.jpg",
+    imgUrl: imgr04,
     imgAlt: "Client thumb",
     name: "Cher Daviau",
     date: "Posted on Jun 10, 2022 at 6:57 am",
@@ -146,7 +150,7 @@ const Review = () => {
 
           <div className="post-item">
             <div className="post-thumb">
-              <img src="/src/assets/images/shop/01.jpg" alt=""></img>
+              <img src={imgr05} alt=""></img>
             </div>
             <div className="post-content">
               <ul className="lab-ul">

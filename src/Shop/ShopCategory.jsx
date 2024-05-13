@@ -1,5 +1,5 @@
 import React from "react";
-import Data from '../products.json'
+import Data from "../products.json";
 
 const ShopCategory = ({
   filterItem,
@@ -16,15 +16,14 @@ const ShopCategory = ({
       <div>
         <button
           className={`m-2 ${selectedCategory === "All" ? "bg-warning" : ""}`}
-       onClick={()=>setProducts(Data)} >
+          onClick={() => setProducts(Data)}
+        >
           All
         </button>
         {menuItems.map((val, id) => {
           return (
             <button
-              className={`m-2 ${
-                selectedCategory === val ? "bg-warning" : ""
-              }`}
+              className={`m-2 ${selectedCategory === val ? "bg-warning" : ""}`}
               key={id}
               onClick={() => filterItem(val)}
             >

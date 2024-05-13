@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 import { useLocation, useNavigate } from "react-router-dom";
 import "../modal.css";
+
 const CheckOutPage = () => {
   const [show, setShow] = useState(false);
   const [ActiveTab, setActiveTab] = useState("visa");

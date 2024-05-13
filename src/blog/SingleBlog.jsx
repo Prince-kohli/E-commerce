@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import blogList from "../utilis/blogdata";
 import { useParams } from "react-router-dom";
 import PageHeader from "../components/PageHeader";
-import Blog from "./Blog";
+import img1 from "../assets/images/blog/single/01.jpg";
+import img2 from "../assets/images/blog/single/02.jpg";
+// import Blog from "./Blog";
 import Tags from "../Shop/Tags";
 import PopularPost from "../Shop/PopularPost";
 const socialList = [
@@ -95,10 +97,7 @@ const SingleBlog = () => {
                                   entre soulng these sweet present moment and
                                   yet feel that never was greater artst
                                 </p>
-                                <img
-                                  src="/src/assets/images/blog/single/01.jpg"
-                                  alt=""
-                                />
+                                <img src={img1} alt="" />
                                 <p>
                                   Serenity hasir taken poseson mying entre soung
                                   these sweet morngs sprng whch enoywith whole
@@ -116,10 +115,7 @@ const SingleBlog = () => {
                                   feel that never was greater artst
                                 </p>
                                 <div className="video-thumb">
-                                  <img
-                                    src="/src/assets/images/blog/single/02.jpg"
-                                    alt=""
-                                  />
+                                  <img src={img2} alt="" />
                                   <a
                                     href="https://youtu.be/_W3R2VwRyF4?si=J-Qo6eZ0E8uk5Dxu"
                                     className="video-button popup"

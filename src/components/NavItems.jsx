@@ -78,7 +78,7 @@ const NavItems = () => {
                       <Link to="about">About</Link>
                     </li>
                     <li>
-                      <Link to="contect">Contect</Link>
+                      <Link to="contect">Contact</Link>
                     </li>
                   </ul>
                 </div>

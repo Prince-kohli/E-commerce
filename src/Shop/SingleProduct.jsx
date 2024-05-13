@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import PageHeader from "../components/PageHeader";
-import Tags from "./Tags"
+import Tags from "./Tags";
+import products from "../products.json";
 // import React, {  useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import PopularPost from './PopularPost'
+import PopularPost from "./PopularPost";
 
-// Import Swiper styles
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import ProductDisplay from "./ProductDisplay";
@@ -17,15 +17,15 @@ const SingleProduct = () => {
   const [product, setProduct] = useState([]);
   const { id } = useParams();
 
-  //   console.log(id);
+  console.log(id);
 
   useEffect(() => {
-    fetch("/src/products.json")
-      .then((res) => res.json())
-      .then((data) => setProduct(data));
+    // fetch("/src/products.json")
+    //   .then((res) => res.json())
+    //   .then((data) => setProduct(data));
   }, []);
-
-  const result = product.filter((p) => p.id === id);
+  const result = products.filter((p) => p.id === id);
+  // console.log(products,"yyyyyy");
 
   return (
     <div>
@@ -63,6 +63,7 @@ const SingleProduct = () => {
                               </SwiperSlide>
                             ))}
                           </Swiper>
+
                           <div className="pro-single-next">
                             <i className="icofont-rounded-left"></i>
                           </div>
@@ -92,8 +93,8 @@ const SingleProduct = () => {
             </div>
             <div className="col-lg-4 col-12">
               <div className="ps-lg-4">
-                <PopularPost/>
-                <Tags/>
+                <PopularPost />
+                <Tags />
               </div>
             </div>
           </div>

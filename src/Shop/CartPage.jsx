@@ -152,7 +152,7 @@ const CartPage = () => {
                 <form className="cart-checkout">
                   <input type="submit" value="Update Cart"></input>
                   <div>
-                    <CheckOutPage/>
+                    <CheckOutPage />
                   </div>
                 </form>
               </div>

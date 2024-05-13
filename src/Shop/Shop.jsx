@@ -14,7 +14,7 @@ const shopResult = "showing 01 - 12 of 139 result";
 const Shop = () => {
   const [GridList, setGridList] = useState(true);
   const [products, setProducts] = useState(Data);
-
+  // console.log(products);
   const [currentPage, setCurrentPage] = useState(1);
 
   const productsPerPage = 12;

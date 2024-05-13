@@ -50,7 +50,10 @@ const Blog = () => {
                           </div>
                           <div className="pf-right">
                             <i className="icofont-comment"></i>
-                          <span className="comment-count">{blog.commentCount}</span></div>
+                            <span className="comment-count">
+                              {blog.commentCount}
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
